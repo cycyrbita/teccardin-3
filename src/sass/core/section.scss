@@ -1,23 +1,27 @@
 
 .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 120px;
     background-color: #fff;
     background-repeat: no-repeat;
+
+    &_face {
+        background-image: url("../media/section/face.jpg");
+        background-position: center top;
+    }
 }
 
-.section__title {
-
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .section {
         padding-top: 40px;
         padding-bottom: 40px;
-    }
 
-    .section__title {
-        font-size: 44px;
+        &_face {
+            padding-bottom: 675px;
+            background-image: url("../media/section/face-1440.jpg");
+            background-position: center bottom;
+            background-color: #e72041;
+        }
     }
 }
 
@@ -25,6 +29,11 @@
     .section {
         padding-top: 30px;
         padding-bottom: 30px;
+
+        &_face {
+            padding-bottom: 500px;
+            background-image: url("../media/section/face-768.jpg");
+        }
     }
 
     .section__title {
@@ -35,9 +44,5 @@
 @media (max-width: 480px) {
     .section {
         
-    }
-
-    .section__title {
-        font-size: 30px;
     }
 }
