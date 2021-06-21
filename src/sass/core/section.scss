@@ -9,6 +9,11 @@
         background-image: url("../media/section/face.jpg");
         background-position: center top;
     }
+
+    &_info {
+        background-image: url("../media/section/info.jpg");
+        background-position: center;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -22,6 +27,10 @@
             background-position: center bottom;
             background-color: #e72041;
         }
+
+        &_info {
+            padding-bottom: 120px;
+        }
     }
 }
 
@@ -34,6 +43,12 @@
             padding-bottom: 500px;
             background-image: url("../media/section/face-768.jpg");
         }
+
+        &_info {
+            padding-bottom: 400px;
+            background-image: url("../media/section/info-768.jpg");
+            background-position: left bottom;
+        }
     }
 
     .section__title {
@@ -43,6 +58,9 @@
 
 @media (max-width: 480px) {
     .section {
-        
+        &_info {
+            padding-bottom: 55%;
+            background-size: contain;
+        }
     }
 }
