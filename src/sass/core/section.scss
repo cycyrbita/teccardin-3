@@ -14,6 +14,12 @@
         background-image: url("../media/section/info.jpg");
         background-position: center;
     }
+
+    &_signs {
+        background-image: url("../media/section/signs.jpg");
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 @media (max-width: 1440px) {
