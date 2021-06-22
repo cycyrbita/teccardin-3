@@ -1,0 +1,166 @@
+
+.complications__title {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 900;
+    color: #e72041;
+    text-transform: uppercase;
+    font-size: 87px;
+    line-height: 1;
+}
+
+.complications__description {
+    margin-bottom: 30px;
+    max-width: 965px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.complications__subtitle {
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.complications__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.complications__item {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 auto;
+    width: 25%;
+
+    &:nth-child(1) {
+        .complications__body {
+            background-image: url("../media/complications/img-1.jpg");
+        }
+    }
+
+    &:nth-child(2) {
+        .complications__body {
+            background-image: url("../media/complications/img-2.jpg");
+        }
+    }
+
+    &:nth-child(3) {
+        .complications__body {
+            background-image: url("../media/complications/img-3.jpg");
+        }
+    }
+    
+    &:nth-child(4) {
+        .complications__body {
+            background-image: url("../media/complications/img-4.jpg");
+        }
+    }
+}
+
+.complications__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    width: 305px;
+    height: 425px;
+    padding: 30px 40px;
+    border-radius: 25px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 35px 10px rgba(0, 0, 0, .2);
+
+    &::before {
+        position: absolute;
+        right: 0;
+        bottom: -1px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 1px;
+        content: '';
+        box-shadow: 0px 0px 160px 100px #000;
+    }
+}
+
+.complications__text {
+    font-size: 700px;
+    color: #fff;
+    font-size: 24px;
+
+    span {
+        display: block;
+    }
+}
+
+.complications__info {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 15px;
+
+    mark {
+        letter-spacing: 0;
+        display: block;
+        margin-top: 20px;
+        font-size: 100px;
+        color: #e72041;
+    }
+}
+
+@media (max-width: 1440px) {
+    .complications__item {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+
+    .complications__box {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .complications__item {
+        width: 100%;
+    }
+
+    .complications__title {
+        font-size: 60px;
+        margin-bottom: 30px;
+    }
+
+    .complications__item {
+        margin-bottom: 30px;
+    }
+
+    .complications__info {
+        font-size: 24px;
+        line-height: 1.2;
+
+        mark {
+            font-size: 52px;
+            line-height: 1;
+        }
+    }
+
+    .complications__info {
+        letter-spacing: 5px;
+    }
+
+    .complications__title {
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+
+    .complications__description {
+        margin-bottom: 20px;
+    }
+}

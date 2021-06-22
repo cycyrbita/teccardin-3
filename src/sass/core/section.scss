@@ -20,6 +20,12 @@
         background-position: center;
         background-size: cover;
     }
+
+    &_complications {
+        padding-bottom: 300px;
+        background-image: url("../media/section/complications.jpg");
+        background-position: center bottom;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -36,6 +42,10 @@
 
         &_info {
             padding-bottom: 120px;
+        }
+
+        &_complications {
+            background-image: url("../media/section/complications-1440.jpg");
         }
     }
 }
