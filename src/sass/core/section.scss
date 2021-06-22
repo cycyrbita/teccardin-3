@@ -1,11 +1,12 @@
 
 .section {
     padding-top: 60px;
-    padding-bottom: 120px;
+    padding-bottom: 60px;
     background-color: #fff;
     background-repeat: no-repeat;
 
     &_face {
+        padding-bottom: 120px;
         background-image: url("../media/section/face.jpg");
         background-position: center top;
     }
@@ -25,6 +26,10 @@
         padding-bottom: 300px;
         background-image: url("../media/section/complications.jpg");
         background-position: center bottom;
+    }
+
+    &_fight {
+        background-color: #222d3f;
     }
 }
 
