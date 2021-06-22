@@ -164,3 +164,9 @@
         margin-bottom: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    .complications__body {
+        width: 100%;   
+    }
+}
