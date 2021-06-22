@@ -6,12 +6,12 @@
     background-repeat: no-repeat;
 
     &_face {
-        padding-bottom: 120px;
         background-image: url("../media/section/face.jpg");
         background-position: center top;
     }
 
     &_info {
+        padding-bottom: 120px;
         background-image: url("../media/section/info.jpg");
         background-position: center;
     }
