@@ -31,6 +31,27 @@
     &_fight {
         background-color: #222d3f;
     }
+
+    &_professional {
+        position: relative;
+        background-image: url("../media/section/professional.jpg");
+        background-position: center bottom;
+        background-color: #335998;
+    }
+}
+
+.section__professional-media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 438px;
+    height: 634px;
+    transform: translateX(-50%);
+    margin-left: 300px;
+    width: 438px;
+    background-image: url("../media/professional/human.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media (max-width: 1440px) {
@@ -52,6 +73,14 @@
         &_complications {
             background-image: url("../media/section/complications-1440.jpg");
         }
+
+        &_professional {
+            background-position: left bottom;
+        }
+    }
+
+    .section__professional-media {
+        display: none;
     }
 }
 
@@ -83,5 +112,20 @@
             padding-bottom: 55%;
             background-size: contain;
         }
+
+        &_professional {
+            padding-top: 240px;
+            background-image: url("../media/section/professional-480.jpg");
+        }
+    }
+
+    .section__professional-media {
+        top: 40px;
+        left: 50%;
+        margin-left: 0;
+        display: block;
+        width: 191px;
+        height: 215px;
+        background-image: url("../media/professional/human-480.png");
     }
 }
