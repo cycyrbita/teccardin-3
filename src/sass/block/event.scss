@@ -141,5 +141,9 @@
 
     .event__item {
         width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
