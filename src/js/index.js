@@ -1,27 +1,62 @@
 
 $(document).ready(function () {
-    $('.js-message__box').owlCarousel({
+    Start();
+
+    $('.js-commits__box').owlCarousel({
         loop: true,
         autoHeight: true,
-        nav: true,
-        responsive: {
-            0 : {
-                stagePadding: 5,
+        margin: 40,
+        stagePadding: 20,
+        responsive : {
+            320 : {
                 items: 1,
-                margin: 15
+                margin: 40,
+                stagePadding: 20,
+                nav: true
             },
 
             768 : {
                 items: 2,
-                stagePadding: 5,
-                margin: 15
+                nav: false
             },
 
-            1024 : {
-                items: 3,
-                stagePadding: 5,
-                margin: 15
+            1310 : {
+                items: 3
             }
         }
     });
+
+    function Start() {
+        var m = 12,
+            s = 0;
+
+        if (m <= 9) {
+            m = "0" + m;
+        };
+
+        var timerId = setTimeout(function tick() {
+            if (s != 0) {
+                s = s - 1;
+
+                if (s <= 9) {
+                    s = "0" + s;
+                }
+            } else {
+                if (m != 0) {
+                    m = m - 1;
+                    s = 59;
+
+                    if (m <= 9) {
+                        m = "0" + m;
+                    }
+                } else {
+                    return
+                }
+            }
+
+            $('.form__time-item:nth-of-type(2) span:first-child').text(m);
+            $('.form__time-item:last-child span:first-child').text(s);
+            timerId = setTimeout(tick, 1000);
+        }, 1000);
+    };
 });
